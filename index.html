@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./Asses/styles.css">
+    <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+    <audio src="" id="audio"></audio>
+
+    <div class="music-player">
+        <!-- MUSIC NAME -->
+        <h2 class="music-name">Over The Galaxy</h2>
+
+        <!-- ARTIST NAME -->
+        <p class="artist-name">Plum</p>
+        
+        <!-- DISK -->
+        <div class="disk"></div>
+
+        <!-- SONG SLIDER -->
+        <div class="song-slider">
+            <!-- LOAD BOARD -->
+            <input type="range" value="0" class="seek-bar">
+            <!-- START TIME -->
+            <span class="current-time">00:00</span>
+            <!-- END TIME -->
+            <span class="song-duration">00:00</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn backward-btn"><img src="./Asses/img/pre.png"></button>
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+
+            <button class="btn forward-btn"><img src="./Asses/img/nxt.png"></button>
+
+        </div>
+    </div>
+    <script src="./data_music.js"></script>
+    <script src="./track.js"></script>
+</body>
+</html>
